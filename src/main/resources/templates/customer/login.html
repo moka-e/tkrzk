@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" th:href="@{/css/login.css}" />
+<title>宝塚メモリーシステム</title>
+</head>
+<body>
+	<main>
+		<div class="title">
+			<p>宝塚メモリーシステム ログインページ</p>
+		</div>
+		<div class="login_form">
+			<form th:action="@{/customer/login}" method="post"
+				th:object="${loginForm}" name="loginForm">
+				<table class="input_area">
+					<tr>
+						<td>ID</td>
+						<td><input type="text" name="user_id"></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type="text" name="password"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="ログイン"><br /></td>
+					</tr>
+				</table>
+				<div style="color: red;" th:each="list : ${err_list}" th:text=${list}></div>
+				新規会員登録はこちら<br /> 管理者ページ<br />
+				<p th:text="${user_name}" />
+			</form>
+		</div>
+	</main>
+</body>
+</html>

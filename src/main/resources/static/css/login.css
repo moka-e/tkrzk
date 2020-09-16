@@ -1,0 +1,32 @@
+main{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/loginbgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.title{
+    font-size: 5vh;
+}
+
+.login_form{
+    width:40%;
+    height: 50%;
+    margin:0 auto;
+    background-color: rgba(240, 248, 255, 0.808);
+}
+
+.input_area{
+    margin:5% auto;
+    font-size:3vh;
+    padding:10%;
+}
+
+.input_area.input{
+    width:15%;
+}
