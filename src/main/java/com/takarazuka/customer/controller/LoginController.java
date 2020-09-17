@@ -28,7 +28,7 @@ public class LoginController {
 
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String loginPage(Model model) {
-		return "/customer/login";
+		return "customer/login";
 	}
 
 	@RequestMapping(value="/customer/login",method=RequestMethod.POST)
