@@ -26,7 +26,7 @@ public class LoginController {
 	MessageSource
 	messageSource;
 
-	@RequestMapping(value="/takarazuka",method=RequestMethod.GET)
+	@RequestMapping(value="/takarazuka.herokuapp.com",method=RequestMethod.GET)
 	public String loginPage(Model model) {
 		return "/customer/login";
 	}
