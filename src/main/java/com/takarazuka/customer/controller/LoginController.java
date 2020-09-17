@@ -38,10 +38,10 @@ public class LoginController {
 		List<String> err_list = new ArrayList<String>();
 		err_list.add(messageSource.getMessage("err.login", null, Locale.getDefault()));
 		if(tf) {
-			return "/customer/index";
+			return "customer/index";
 		}else {
 			model.addAttribute("err_list", err_list);
-			return "/customer/login";
+			return "customer/login";
 		}
 	}
 }
