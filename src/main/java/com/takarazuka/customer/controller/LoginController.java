@@ -26,7 +26,7 @@ public class LoginController {
 	MessageSource
 	messageSource;
 
-	@RequestMapping(value="/takarazuka-forever",method=RequestMethod.GET)
+	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String loginPage(Model model) {
 		return "/customer/login";
 	}
