@@ -27,6 +27,11 @@ public class LoginController {
 	messageSource;
 
 	@RequestMapping(value="/",method=RequestMethod.GET)
+	public String topPage(Model model) {
+		return "customer/top";
+	}
+
+	@RequestMapping(value="/customer/login",method=RequestMethod.GET)
 	public String loginPage(Model model) {
 		return "customer/login";
 	}

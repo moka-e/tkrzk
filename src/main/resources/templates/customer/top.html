@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="../css/top.css" />
+		<title>宝塚メモリーシステム</title>
+	</head>
+	<body>
+		<main>
+			<div class=title>
+				<p class=site_name>my Takarazuka diary</p>
+			</div>
+			<div class=explain>
+				<p class="sentence">
+					このサイトは、宝塚歌劇を愛する運営者による記録サイトです。<br/>
+					貴方が見たあの景色、かつてより紡がれた歌劇団の歴史。<br/>
+					大切にしたい貴方だけの「宝塚の記録」を実現するそんな場所。<br/>
+				</p>
+				<p class="item_title">〜このサイトでできること〜</p>
+				<li>歴代スターや過去公演の各種検索</li>
+				<li>ワンクリックで簡単に作成できる貴方だけの宝塚スケジュールカレンダー</li>
+				<li>各公演の観劇状況登録（現地観劇？DVD?オンデマンド？未観劇？）</li><br/>
+				ログインは<a th:href="@{/customer/login}">こちら</a>　　会員登録は<a href="/cutomer/register">こちら</a>
+			</div>
+		</main>
+	</body>
+</html>
