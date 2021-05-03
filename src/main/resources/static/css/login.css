@@ -1,3 +1,35 @@
+@media screen and (max-width:480px){
+	main{
+    	position: absolute;
+    	top:0;
+    	left:0;
+    	width: 100vw;
+    	height: 100vh;
+    	background-image: url(../img/loginbgimg.jpg);
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	text-align: center;
+	}
+
+	.title{
+    	font-size: 3vh;
+	}
+
+	.login_form{
+    	width:80%;
+    	height: 40%;
+    	margin:0 auto;
+    	background-color: rgba(240, 248, 255, 0.808);
+	}
+
+	.input_area{
+    	margin:2% auto;
+    	font-size:2vh;
+    	padding:10%;
+	}
+}
+
+@media screen and (min-width: 480px) {
 main{
     position: absolute;
     top:0;
@@ -30,12 +62,4 @@ main{
 .input_area.input{
     width:15%;
 }
-
-@media screen and (max-width:480px){
-	.login_form{
-    	width:80%;
-    	height: 80%;
-    	margin:0 auto;
-    	background-color: rgba(240, 248, 255, 0.808);
-	}
 }
