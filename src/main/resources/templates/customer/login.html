@@ -28,7 +28,7 @@
 					</tr>
 				</table>
 				<div style="color: red;" th:each="list : ${err_list}" th:text=${list}></div>
-				新規会員登録はこちら<br /> 管理者ページ<br />
+				新規会員登録は<a th:href="@{/customer/register}">こちら</a><br /> 管理者ページ<br />
 				<p th:text="${user_name}" />
 			</form>
 		</div>
